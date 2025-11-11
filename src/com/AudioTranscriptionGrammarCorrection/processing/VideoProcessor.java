@@ -7,7 +7,6 @@ import java.io.File;
  * Its scope is to hide the complexity of the entire process
  * behind a clean method: processVideo().
  */
-
 public class VideoProcessor {
 
     private final IAudioExtractionService audioExtractionService;
