@@ -34,7 +34,7 @@ public class Main {
 
         // --- Result ---
         if (result != null) {
-            System.out.println("\n========= 📊 Analysis Result ==========");
+            System.out.println("\n========= Analysis Result ==========");
             System.out.println("\nOriginal transcription:");
             System.out.println("  " + result.originalTranscript());
 

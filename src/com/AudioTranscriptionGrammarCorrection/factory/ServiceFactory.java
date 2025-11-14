@@ -1,6 +1,7 @@
 package com.AudioTranscriptionGrammarCorrection.factory;
 import com.AudioTranscriptionGrammarCorrection.services.*;
 import com.AudioTranscriptionGrammarCorrection.impl.*;
+import com.AudioTranscriptionGrammarCorrection.impl.LanguageToolGrammarService;
 /**
  * (FACTORY).
  * It's a utility class with static method to create the concrete
@@ -13,6 +14,7 @@ public class ServiceFactory {
     private ServiceFactory(){
         throw new IllegalStateException("Utility class");
     }
+    private static final boolean USE_MOCKS = false;
 
     public static IAudioExtractionService createAudioExtractorService() {
         return new MockAudioExtractorService();
@@ -23,7 +25,10 @@ public class ServiceFactory {
     }
 
     public static IGrammarService createGrammarService() {
-        return new MockGrammarService();
+        if (USE_MOCKS) {
+            return new MockGrammarService();
+        }
+        return new LanguageToolGrammarService();
     }
 
 }
