@@ -31,5 +31,8 @@ bin/
 ### Maven ###
 /target
 
+### Vosk ###
+/vosk-model-en
+
 ### Mac OS ###
 .DS_Store

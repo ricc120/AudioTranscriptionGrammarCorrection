@@ -23,7 +23,10 @@ public class ServiceFactory {
     }
 
     public static ITranscriptionService createTranscriptionService() {
-        return new MockTranscriptionService();
+        if (USE_MOCKS) {
+            return new MockTranscriptionService();
+        }
+        return new VoskTranscriptionService();
     }
 
     public static IGrammarService createGrammarService() {
