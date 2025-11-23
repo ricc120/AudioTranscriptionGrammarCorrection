@@ -37,7 +37,6 @@ To use the app in full mode (no Mock), the following components are required:
 ### 1. Audio Extraction (FFmpeg)
 The app uses **FFmpeg** for audio extraction from video file.
 - **Requirement:** FFmpeg must be installed on the OS and accessible through environment variables (PATH).
-- **Check:** Run `ffmpeg -version` in the terminal to check installation.
 - **Implementation:** Class `FFmpegAudioExtractor` use `ProcessBuilder`.
 
 ### 2. Grammatical correction (LanguageTool)
@@ -46,13 +45,14 @@ The app uses **LanguageTool** library (Java version) for text analysis.
 - **Implementation:** Class `LanguageToolGrammarService`.
 
 ### 3. Transcription (TODO)
-It'll be implemented using **Vosk** library.
+The app uses **Vosk** for offline transcription.
+- **Requirement:** Extract small model from [Vosk Models] in the project directory
+- **Implementation:** Class `VoskTranscriptionService`.
 
 ## How to start
-
-At present the project uses Mock implementations so it doesn't require external APIs.
 To start:
 
 1. Compile all `.java` classes.
 2. Execute `Main.java` class.
-3. The analysis output will be printed on the console.
+3. Chose a video file .mov.
+4. The analysis output will be printed on the console.
