@@ -31,6 +31,9 @@ bin/
 ### Maven ###
 /target
 
+## Whisper ##
+/whisper
+
 ### Vosk ###
 /vosk-model-en
 

@@ -3,7 +3,7 @@ import com.AudioTranscriptionGrammarCorrection.services.IAudioExtractionService;
 import java.io.File;
 import java.io.IOException;
 
-public class FFmpegAudioExtractor implements IAudioExtractionService {
+public class FFmpegAudioExtractorService implements IAudioExtractionService {
 
     @Override
     public File extractAudio(File videoFile) {

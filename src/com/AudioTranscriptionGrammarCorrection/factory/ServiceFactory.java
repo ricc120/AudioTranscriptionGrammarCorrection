@@ -19,14 +19,14 @@ public class ServiceFactory {
         if (USE_MOCKS) {
             return new MockAudioExtractorService();
         }
-        return new FFmpegAudioExtractor();
+        return new FFmpegAudioExtractorService();
     }
 
     public static ITranscriptionService createTranscriptionService() {
         if (USE_MOCKS) {
             return new MockTranscriptionService();
         }
-        return new VoskTranscriptionService();
+        return new WhisperLocalTranscriptionService();
     }
 
     public static IGrammarService createGrammarService() {
