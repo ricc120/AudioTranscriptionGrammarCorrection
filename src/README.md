@@ -44,10 +44,18 @@ The app uses **LanguageTool** library (Java version) for text analysis.
 - **Management:** Automatic via Maven (`pom.xml`).
 - **Implementation:** Class `LanguageToolGrammarService`.
 
-### 3. Transcription (TODO)
+### 3.1 Transcription (Vosk method)
 The app uses **Vosk** for offline transcription.
-- **Requirement:** Extract small model from [Vosk Models] in the project directory
+
+- **Requirement:** Extract small model from Vosk models in the project directory.
 - **Implementation:** Class `VoskTranscriptionService`.
+
+### 3.2 Transcription (Whisper method)
+
+This method is more accurate in the transcription, using **Whisper** library.
+
+- **Requirements:** Extract large v3 turbo model from **ggml** models in the project directory.
+- **Implementation:** Class `WhisperLocalTranscriptionService`.
 
 ## How to start
 To start:
