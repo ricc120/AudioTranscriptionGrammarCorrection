@@ -4,7 +4,7 @@ out/
 !**/src/test/**/out/
 .kotlin
 .idea
-AudioTranscriptionGrammarCorrection.iml
+audio-transcription-grammar-correction.iml
 
 ### Eclipse ###
 .apt_generated

@@ -44,9 +44,10 @@ The app uses **LanguageTool** library (Java version) for text analysis.
 - **Management:** Automatic via Maven (`pom.xml`).
 - **Implementation:** Class `LanguageToolGrammarService`.
 
-### 3. Transcription (TODO)
+### 3. Transcription (Vosk)
 The app uses **Vosk** for offline transcription.
-- **Requirement:** Extract small model from [Vosk Models] in the project directory
+
+- **Requirement:** Extract small model from Vosk models in the project directory.
 - **Implementation:** Class `VoskTranscriptionService`.
 
 ## How to start
